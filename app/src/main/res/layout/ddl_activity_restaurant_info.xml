@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/five_dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/restaurant_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/two_fourty_dp"
+            android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toTopOf="@+id/restaurant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/one_fifty_dp" />
+
+        <TextView
+            android:id="@+id/restaurant"
+            style="@style/DDLRestaurantInfo.Left"
+            android:text="Name"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/restaurant_img"
+            app:layout_constraintWidth_default="wrap" />
+
+        <TextView
+            android:id="@+id/restaurant_value"
+            style="@style/DDLRestaurantInfo.Right"
+            android:text="@string/not_available"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/restaurant_img" />
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/DDLRestaurantInfo.Left"
+            android:text="Description"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/restaurant"
+            app:layout_constraintWidth_default="wrap" />
+
+        <TextView
+            android:id="@+id/description_value"
+            style="@style/DDLRestaurantInfo.Right"
+            android:maxLines="3"
+            android:text="@string/not_available"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/restaurant_value"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/cusine"
+            style="@style/DDLRestaurantInfo.Left"
+            android:text="Cusine"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/description"
+            app:layout_constraintWidth_default="wrap"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/cusine_value"
+            style="@style/DDLRestaurantInfo.Right"
+            android:maxLines="3"
+            android:text="@string/not_available"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description_value" />
+
+        <TextView
+            android:id="@+id/phone"
+            style="@style/DDLRestaurantInfo.Left"
+            android:text="Phone Number"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/cusine"
+            app:layout_constraintWidth_default="wrap" />
+
+        <TextView
+            android:id="@+id/phone_value"
+            style="@style/DDLRestaurantInfo.Right"
+            android:text="@string/not_available"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cusine_value" />
+
+        <TextView
+            android:id="@+id/address"
+            style="@style/DDLRestaurantInfo.Left"
+            android:text="Address"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/phone"
+            app:layout_constraintWidth_default="wrap" />
+
+        <TextView
+            android:id="@+id/address_value"
+            style="@style/DDLRestaurantInfo.Right"
+            android:maxLines="3"
+            android:text="@string/not_available"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phone_value" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/DDLRestaurantInfo.Left"
+            android:text="Status"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline"
+            app:layout_constraintTop_toBottomOf="@id/address"
+            app:layout_constraintWidth_default="wrap" />
+
+        <TextView
+            android:id="@+id/status_value"
+            style="@style/DDLRestaurantInfo.Right"
+            android:maxLines="3"
+            android:text="@string/not_available"
+            app:layout_constraintLeft_toRightOf="@id/guideline"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/address_value" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

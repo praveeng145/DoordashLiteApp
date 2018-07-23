@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/five_dp">
+
+    <ImageView
+        android:id="@+id/restaurant_img"
+        android:layout_width="@dimen/one_hundred_dp"
+        android:layout_height="@dimen/one_hundred_dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/five_dp"
+        android:contentDescription="@string/restaurant_desc"/>
+
+    <TextView
+        android:id="@+id/restaurant_title"
+        style="@style/DDLRestaurantListItemText.Title"
+        android:layout_alignTop="@id/restaurant_img"
+        android:layout_margin="@dimen/five_dp"
+        android:layout_toRightOf="@id/restaurant_img"
+        android:hint="Title" />
+
+    <TextView
+        android:id="@+id/restaurant_address"
+        style="@style/DDLRestaurantListItemText.Address"
+        android:layout_below="@id/restaurant_title"
+        android:layout_alignLeft="@id/restaurant_title"
+        android:hint="Address" />
+
+    <TextView
+        android:id="@+id/restaurant_ratings"
+        style="@style/DDLRestaurantListItemText.Ratings"
+        android:layout_below="@id/restaurant_address"
+        android:layout_alignLeft="@id/restaurant_title"
+        android:hint="Ratings" />
+
+    <TextView
+        android:id="@+id/restaurant_status"
+        style="@style/DDLRestaurantListItemText.Status"
+        android:layout_below="@id/restaurant_address"
+        android:hint="Staus"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

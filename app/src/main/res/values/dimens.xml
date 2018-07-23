@@ -1,0 +1,23 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--all dp values-->
+    <dimen name="five_dp">5dp</dimen>
+    <dimen name="sixteen_dp">16dp</dimen>
+    <dimen name="twenty_four_dp">24dp</dimen>
+    <dimen name="fifty_dp">50dp</dimen>
+    <dimen name="one_hundred_dp">100dp</dimen>
+    <dimen name="one_twenty_dp">120dp</dimen>
+    <dimen name="one_fifty_dp">150dp</dimen>
+    <dimen name="one_eighty_dp">180dp</dimen>
+    <dimen name="two_fourty_dp">240dp</dimen>
+    <dimen name="three_sixty_dp">360dp</dimen>
+
+    <!--all sp values-->
+    <dimen name="sixteen_sp">16sp</dimen>
+    <dimen name="twenty_sp">20sp</dimen>
+    <dimen name="twenty_four_sp">24sp</dimen>
+
+    <!--<dimen name="ddl_toolbar_text">twenty_four_sp</dimen>
+    <dimen name="ddl_list_item_height">one_twenty_dp</dimen>-->
+</resources>

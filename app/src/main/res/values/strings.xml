@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DoordashLite</string>
+    <string name="restaurant_desc">Restaurant Image</string>
+    <string name="loading_more">Loading more restaurants</string>
+    <string name="not_available">Not Available</string>
+</resources>
