@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme.NoActionBar">
         <activity
-            android:name=".activities.RestaurantListActivity"
+            android:name=".activities.RestaurantListActivityV2"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +22,9 @@
         </activity>
         <activity
             android:name=".activities.RestaurantInfoActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activities.RestaurantListActivity"
             android:screenOrientation="portrait"></activity>
     </application>
 

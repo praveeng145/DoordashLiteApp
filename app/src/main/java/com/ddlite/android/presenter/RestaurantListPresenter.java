@@ -93,7 +93,7 @@ public class RestaurantListPresenter extends BasePresenter implements Restaurant
             @Override
             public void failure(NetworkFacade.NetworkError error) {
                 // TODO : handle failures
-                notifyState(PresenterState.NETWORK_REQUEST_END);
+                notifyState(PresenterState.NETWORK_ERROR);
             }
         });
     }
